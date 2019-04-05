@@ -702,20 +702,11 @@ label {
   }
 
 .footer__layout {
-  display :grid;
-  grid-template-areas: "a"
-                       "b"
-                       "c"
-                       "d"
-                       "e"
-                       "f";
-  grid-template-columns: 100vw;
-  grid-template-rows: 120px 250px 250px 250px 250px 100px;
-  min-height: 1300px;
+  display :flex;
+  flex-wrap: wrap;
 }
 
 .footer__layout-contact{
-  grid-area: a;
   margin-left: 9vw;
   width: 80vw;
   margin-top: 40px;
@@ -723,7 +714,6 @@ label {
 }
 
 .footer__layout-service{
-  grid-area: b;
   margin-left: 34vw;
   width: 35vw;
   color: white;
@@ -731,7 +721,6 @@ label {
 }
 
 .footer__layout-learn{
-  grid-area: c;
   margin-left: 42vw;
   width: 18vw;
   color: white;
@@ -739,7 +728,6 @@ label {
 }
 
 .footer__layout-company{
-  grid-area: d;
   margin-left: 35vw;
   width: 30vw;
   color: white;
@@ -747,7 +735,6 @@ label {
 }
 
 .footer__layout-location{
-  grid-area: e;
   margin-left: 35vw;
   width: 30vw;
   color: white;
