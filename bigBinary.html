@@ -4,29 +4,28 @@
       <title>BigBinary</title>
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <link href="bigBinary.css" type="text/css" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="bigBinary.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
     </head>
     <body>
-      <div class = "nav">
-          <nav class="nav__logo">
+      <nav class = "nav">
+          <div class="nav__logo">
             <img src="logo.png">
-          </nav>
-
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-          <div class = 'nav__topbar'>
-            <a href='#client' class= 'nav__topbar-clients'>CLIENTS</a>
-            <a href='#services' class= 'nav__topbar-services'>SERVICES</a>
-            <a href='#presentations' class= 'nav__topbar-presentations'>PRESENTATIONS</a>
-            <a href='#blog' class= 'nav__topbar-blog'>BLOG</a>
-            <a href='#contact' class= 'nav__topbar-contact'>CONTACT</a>
-            <a href='#more' class= 'nav__topbar-more'>MORE</a>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+              <div class = 'nav__topbar'>
+                <a href='#client' class= 'nav__topbar-items'>CLIENTS</a>
+                <a href='#services' class= 'nav__topbar-items'>SERVICES</a>
+                <a href='#presentations' class= 'nav__topbar-items'>PRESENTATIONS</a>
+                <a href='#blog' class= 'nav__topbar-items'>BLOG</a>
+                <a href='#contact' class= 'nav__topbar-items'>CONTACT</a>
+                <a href='#more' class= 'nav__topbar-items'>MORE</a>
+              </div>
           </div>
-      </div>
+      </nav>
 <!--Work Introduction Code starts here-->
-      <div class= "workbox">
+      <section class= "workbox">
         <div class = "workbox__intro">
           <p class="workbox__intro-work">How We Work</p>
           <p class="workbox__intro-desc">BigBinary is an opinionated company. We value open source, learning, remote work, and open communication. This ebook covers
@@ -35,57 +34,415 @@
         <div class = "workbox__cover">
           <img src = "cover.png">
         </div>
-      </div>
+      </section>
 <!--Work Introduction Code ends here-->
 <!--Table Of Contents Code ends here-->
 
 
-      <div class = 'toccontent'>
+      <section class = 'toccontent'>
         <div class= 'toccontent__content'>
           Table of Contents
         </div>
-        <p class= "toccontent__item1">
+
+        <button class= "toccontent__accordion" >
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item1-text1">Introduction</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+
+        <div class="accordion__content" style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Getting work done</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Setup</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Coding</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Convention</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Tests</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">External Services</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Heroku</span>
-        </p>
-        <p class= "toccontent__item2">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+        <button class= "toccontent__accordion">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
           <span class="toccontent__item2-text2">Operations</span>
-        </p>
-        <p class= "toccontent__item3">
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+        <button class= "toccontent__accordion" id ="accordion1">
           <span class="toccontent__item1-logo1"> <img src="folder.png"></span>
-          <span class="toccontent__item3-text3">Writing Blog</span>
-        </p>
-      </div>
-<!--Footer Code Starts From Here -->
+          <span class="toccontent__item2-text2">Writing Blog</span>
+          <span class="fa fa-chevron-right"></span>
+        </button>
+        <div class="accordion__content"  style="display:none;">
+          <p>
+            <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+            <span class="toccontent__doc1-text1">Creating an issue in Github</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Do not use Pull Request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Radical Candor</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">How to find all issue</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Prefer github over slack</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Create branch</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Send pull request</span>
+          </p>
+          <p>
+          <span class="toccontent__doc1-logo1"> <img src="document.png"></span>
+          <span class="toccontent__doc1-text1">Take Screenshot</span>
+          </p>
+        </div>
+      </section>
+
       <footer>
         <div class="footer">
           <section class="footer__layout">
@@ -149,5 +506,6 @@
         </div>
       </footer>
 <!--Footer Code ends From Here-->
+  <script src="bigBinary.js"></script>
     </body>
 </html>

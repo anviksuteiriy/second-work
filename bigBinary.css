@@ -40,6 +40,7 @@ body{
     text-decoration: none;
     color: 	black;
     line-height: 50px;
+    margin-left: 20px;
 }
 
 label {
@@ -81,21 +82,13 @@ label {
         background-color: #0099ff !important;
         display: block;
         border-bottom: 1px solid #EAEAEB;
-        margin: 0;
+        margin: 0px !important;
     }
 
     #toggle:checked + .nav__topbar {
         display: block;
         position: relative;
     }
-}
-
-.nav__topbar-clients{
-  margin-left: 10vw;
-}
-
-.nav__topbar a{
-  margin-left: 3vw;
 }
 
 /*nav bar ends here*/
@@ -143,6 +136,8 @@ label {
 .toccontent {
   border: 1px solid #F8F8F8;
   background-color: #F8F8F8;
+  min-height: 1100px;
+  height: auto;
 }
 
 .toccontent__content{
@@ -152,22 +147,42 @@ label {
   margin-top: 60px;
 }
 
-.toccontent__item1 {
+.toccontent__accordion{
   margin-top: 40px;
   background-color: #FFFFFF;
   width: 600px;
   height: 65px;
   margin-left: 250px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   box-shadow: 4px 4px #F5F5F5;
+  margin-top: 25px;
 }
+
+#accordion1 {
+  margin-bottom: 100px;
+}
+
+.accordion__content  {
+
+  background-color: white;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  width: 600px;
+  margin-left: 250px;
+
+}
+
+.accordion__content::before{
+  display: none;
+}
+
 
 .toccontent__item1-logo1 img{
   display: inline;
   width: 35px;
   height: 35px;
-  margin-left: 25px;
-  margin-top: 12px;
+
 }
 
 .toccontent__item1-text1 {
@@ -177,36 +192,7 @@ label {
   font-size: 18px;
 }
 
-.toccontent__item2 {
-  margin-top: 21px;
-  background-color: #FFFFFF;
-  width: 600px;
-  height: 65px;
-  margin-left: 250px;
-  border-radius: 5px;
-  box-shadow: 4px 4px #F5F5F5;
-}
-
-
 .toccontent__item2-text2 {
-  position: relative;
-  top: -10px;
-  left: 15px;
-  font-size: 18px;
-}
-
-.toccontent__item3 {
-  margin-top: 21px;
-  background-color: #FFFFFF;
-  width: 600px;
-  height: 65px;
-  margin-left: 250px;
-  border-radius: 5px;
-  box-shadow: 4px 4px #F5F5F5;
-  margin-bottom: 80px;
-}
-
-.toccontent__item3-text3 {
   position: relative;
   top: -10px;
   left: 15px;
@@ -215,10 +201,6 @@ label {
 
 /*Table oF Contents code ends here*/
 
-
-
-
-/*Table of Contents end here*/
 
 /*Footer Code starts Here*/
 
@@ -230,7 +212,7 @@ label {
 .footer__layout {
   display :grid;
   grid-template-areas: "a b c d e f";
-  grid-template-columns: 200px 120px 100px 100px 100px 100px;
+  grid-template-columns:  15% 15% 15% 15% 15% 15%;
   grid-template-rows: 300px;
 }
 
@@ -276,7 +258,6 @@ label {
   width: 120px;
   color: white;
   margin-top: 35px;
-  margin-bottom:
 }
 
 .footer__layout-service #service--services {
@@ -295,7 +276,7 @@ label {
 
 .footer__layout-learn{
   grid-area: c;
-  margin-left: 220px;
+  margin-left: 170px;
   width: 100px;
   color: white;
   margin-top: 35px;
@@ -309,7 +290,7 @@ label {
 
 .footer__layout-company{
   grid-area: d;
-  margin-left: 240px;
+  margin-left: 120px;
   width: 100px;
   color: white;
   margin-top: 35px;
@@ -323,7 +304,7 @@ label {
 
 .footer__layout-location{
   grid-area: e;
-  margin-left: 300px;
+  margin-left: 120px;
   width: 100px;
   color: white;
   margin-top: 35px;
@@ -337,7 +318,7 @@ label {
 
 .footer__layout-social{
   grid-area: f;
-  margin-left: 350px;
+  margin-left: 120px;
   width: 200px;
   margin-top: 18px;
 }
@@ -413,16 +394,15 @@ label {
 
 @media only screen and (min-width:750px) and (max-width:1200px) {
   .workbox{
-    width: 72vw;
-    margin-left: 12vw;
-    display: grid;
-    grid-template-areas: "x y";
-    grid-template-columns: 35vw 42vw;
-    grid-template-rows: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .workbox__intro {
-    grid-area: x;
     font-size: 18px;
   }
 
@@ -439,19 +419,13 @@ label {
     line-height: 25px;
   }
 
-  .workbox__cover {
-    grid-area: y;
-  }
-
   .workbox__cover img {
-    width: 40vw;
-    height: 300px;
+    width: 370px;
+
   }
 
   .toccontent {
-
     background-color: #F8F8F8;
-    font-size: 10px;
   }
 
 .toccontent__content{
@@ -461,14 +435,28 @@ label {
     margin-top: 60px;
   }
 
-  .toccontent__item1 {
+  .toccontent__accordion{
     margin-top: 40px;
     background-color: #FFFFFF;
-    width: 60vw;
+    width: 90%;
     height: 65px;
-    margin-left: 20vw;
-    border-radius: 5px;
+    margin: 0 50px;
+    border-radius: 5px 5px 0 0;
     box-shadow: 4px 4px #F5F5F5;
+    margin-top: 25px;
+    max-width: 1100px
+  }
+
+
+
+  .accordion__content {
+    background-color: white;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    width: 90%;
+    margin: 0 50px;
+    max-width:1100px;
   }
 
   .item1 .toccontent__item1-logo1 img{
@@ -486,37 +474,7 @@ label {
     font-size: 1.8em;
   }
 
-  .toccontent__item2 {
-    margin-top: 21px;
-    background-color: #FFFFFF;
-    width: 60vw;
-    height: 65px;
-    margin-left: 20vw;
-    border-radius: 5px;
-    box-shadow: 4px 4px #F5F5F5;
-  }
-
-
-
   .toccontent__item2-text2 {
-    position: relative;
-    top: -10px;
-    left: 15px;
-    font-size: 1.8em;
-  }
-
-  .toccontent__item3 {
-    margin-top: 21px;
-    background-color: #FFFFFF;
-    width: 60vw;
-    height: 65px;
-    margin-left: 20vw;
-    border-radius: 5px;
-    box-shadow: 4px 4px #F5F5F5;
-    margin-bottom: 80px;
-  }
-
-   .toccontent__item3-text3 {
     position: relative;
     top: -10px;
     left: 15px;
@@ -528,71 +486,62 @@ label {
     grid-template-areas: "a b"
                          "c d"
                          "e f";
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 250px 250px 250px;
     min-height: 810px;
   }
 
   .footer__layout-contact{
     grid-area: a;
-    margin-left: 15vw;
-    width: 50vw;
-    margin-top: 40px;
+    margin: 40px 180px 0 150px;
+    width: 50%;
   }
 
   .footer__layout-service{
     grid-area: b;
-    margin-left: 14vw;
-    width: 35vw;
+    margin: 35px 40px 0 190px;
+    width: 50%;
     color: white;
-    margin-top: 35px;
   }
 
   .footer__layout-learn{
     grid-area: c;
-    margin-left: 20vw;
-    width: 18vw;
+    margin: 35px 0px 0 220px;
     color: white;
-    margin-top: 35px;
   }
 
   .footer__layout-company{
     grid-area: d;
-    margin-left: 14vw;
+    margin: 35px 40px 0 190px;
+    width: 50%;
     color: white;
-    margin-top: 35px;
+
   }
 
   .footer__layout-location{
     grid-area: e;
-    margin-left: 20vw;
-    width: 100px;
+    margin: 35px 0px 0 220px;
     color: white;
-    margin-top: 35px;
   }
 
   .footer__layout-social{
     grid-area: f;
-    margin-left: 14vw;
-    width: 30vw;
-    margin-top: 22px;
+    margin: 22px 40px 0 190px;
+    width: 50%;
   }
 }
 
 
 @media only screen and (max-width:749px) {
   .workbox{
-    width: 72vw;
-    margin-left: 12vw;
-    display: grid;
-    grid-template-areas: "x"
-                         "y";
-    grid-template-columns: 100%;
-    grid-template-rows: 380px 300px;
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .workbox__intro {
-    grid-area: x;
     font-size: 18px; /*Setting size in parent element to use EM*/
   }
 
@@ -605,29 +554,26 @@ label {
 
   .workbox__intro-desc {
     color: 	#A8A8A8;
-    width: 72vw;
+    width: 300px;
     text-align: center;
     font-size: 1em;
     line-height: 20px;
   }
 
-  .workbox__cover {
-    grid-area: y;
-  }
+
 
   .workbox__cover img {
-    position: relative;
-    width: 70vw;
-    height: 60vw;
-    margin-top: 4vw;
+    width: 350px;
+    height: auto;
   }
 
   .toccontent {
     position: relative;
-    top: 25vw;
     background-color: #F8F8F8;
     font-size: 10px;
-    height: 1200px;
+    height: auto;
+    min-height: 1100px;
+    top: 25px;
   }
 
   .toccontent__content{
@@ -635,6 +581,28 @@ label {
     font-size: 2.8em;
     font-weight: 600;
     margin-top: 60px;
+  }
+
+  .toccontent__accordion
+  {
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 65px;
+    margin: 0 15px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 4px 4px #F5F5F5;
+    margin-top: 25px;
+    max-width: 610px;
+  }
+
+  .accordion__content {
+    background-color: white;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    width: 90%;
+    margin: 0 15px;
+    max-width: 610px;
   }
 
   .toccontent__item1 {
@@ -651,8 +619,6 @@ label {
     display: inline;
     width: 35px;
     height: 35px;
-    margin-left: 2.8vw;
-    margin-top: 12px;
   }
 
    .toccontent__item1-text1 {
@@ -662,35 +628,7 @@ label {
     font-size: 1.6em;
   }
 
-  .toccontent__item2 {
-    margin-top: 21px;
-    background-color: #FFFFFF;
-    width: 60vw;
-    height: 65px;
-    margin-left: 20vw;
-    border-radius: 5px;
-    box-shadow: 4px 4px #F5F5F5;
-  }
-
   .toccontent__item2-text2 {
-    position: relative;
-    top: -10px;
-    left: 1vw;
-    font-size: 1.6em;
-  }
-
-  .toccontent__item3 {
-    margin-top: 21px;
-    background-color: #FFFFFF;
-    width: 60vw;
-    height: 65px;
-    margin-left: 20vw;
-    border-radius: 5px;
-    box-shadow: 4px 4px #F5F5F5;
-    margin-bottom: 80px;
-  }
-
-  .toccontent__item3-text3 {
     position: relative;
     top: -10px;
     left: 1vw;
@@ -747,12 +685,13 @@ label {
 }
 
 .footer__layout-social{
-  margin-left: 25vw;
-  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 749px;
   margin-top: 70px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
 }
 
 .footer__layout-social .footer__layout-text{
@@ -789,4 +728,59 @@ label {
 .footer__layout-social .footer__layout-github {
   display: none;
   }
+}
+
+
+/*Accordian*/
+
+
+
+button.toccontent__accordion{
+  background-color: white;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 10px;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.toccontent__accordion.is-open .fa {
+  color: grey;
+  font-size: 22px !important;
+  position: relative;
+  float: right;
+  top: 10px;
+  transform: rotate(-90deg);
+}
+
+button.toccontent__accordion:hover, button.toccontent__accordion.is-open {
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+
+.toccontent__doc1-logo1 img{
+  height: 30px;
+  width: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.toccontent__doc1-text1 {
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+
+.fa {
+  color: grey;
+  font-size: 22px !important;
+  position: relative;
+  float: right;
+  top: 10px;
+  transform: rotate(90deg);
 }
